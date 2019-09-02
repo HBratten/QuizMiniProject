@@ -7,7 +7,17 @@ import { QuizService } from "../quiz.service";
   styleUrls: ["./results.component.css"]
 })
 export class ResultsComponent implements OnInit {
+  scoreList: any[];
+  answerList: any[];
   constructor(private quizService: QuizService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.quizService.getScores().subscribe(response => {
+      this.scoreList = response;
+    });
+
+    this.quizService.getQuestions().subscribe(response => {
+      this.answerList = response;
+    });
+  }
 }

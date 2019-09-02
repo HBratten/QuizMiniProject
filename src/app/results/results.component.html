@@ -1,1 +1,9 @@
-<p></p>
+<div *ngFor="let score of scoreList; index as i">
+  <p>{{ this.score.username }}</p>
+  <p>{{ this.score.score }}</p>
+</div>
+
+<h2>Answers</h2>
+<div *ngFor="let answer of answerList; index as i">
+  <p>{{ answer.answer }}</p>
+</div>

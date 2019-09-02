@@ -36,8 +36,9 @@ export class QuizService {
       if (form[i] === questions[i].answer) {
         this.score++;
       }
+      this.router.navigate(["results"]);
     }
-    this.router.navigate(["results"]);
+
     return (this.userResult = {
       username: this.username,
       score: this.score

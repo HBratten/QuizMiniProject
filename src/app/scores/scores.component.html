@@ -1,1 +1,6 @@
-<p>scores works!</p>
+<h2>Top Scores</h2>
+
+<div *ngFor="let score of scoreList; index as i">
+  <p>{{ this.score.username }}</p>
+  <p>{{ this.score.score }}</p>
+</div>
