@@ -20,11 +20,9 @@ export class QuizComponent implements OnInit {
   }
 
   submitForm(form: NgForm) {
-    let userScore = this.quizService.calculateScore(
-      form.value,
-      this.questionList,
-      form.value.username
-    );
-    this.quizService.postScores(userScore);
+    this.quizService.calculateScore(form.value, this.questionList);
+    form.reset();
+    this.quizService.navigateToResults();
+    // this.quizService.postScores(userScore);
   }
 }

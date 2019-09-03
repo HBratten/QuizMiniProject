@@ -1,0 +1,12 @@
+nav {
+  font-family: "Lobster Two", cursive;
+  font-size: 24px;
+  padding: 10px;
+  background-color: #e5dcdb;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: #8068d8;
+}

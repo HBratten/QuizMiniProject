@@ -1,5 +1,11 @@
 <form #quizForm="ngForm" (ngSubmit)="submitForm(quizForm)">
-  <input type="text" name="username" ngModel placeholder="username" />
+  <input
+    class="username"
+    type="text"
+    name="username"
+    ngModel
+    placeholder="Please enter your name"
+  />
 
   <div *ngFor="let question of questionList; index as i">
     <h2>{{ question.question_name }}</h2>
