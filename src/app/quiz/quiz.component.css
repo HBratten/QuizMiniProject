@@ -1,7 +1,7 @@
 :host {
   display: block;
   font-family: "Lobster Two", cursive;
-  background-image: url(../../assets/taytay2.jpg);
+  background-image: url(../../assets/taytay3.jpg);
   background-size: cover;
   height: 100vh;
   overflow-y: scroll;
@@ -21,7 +21,7 @@ label {
   font-size: 20px;
   font-family: "Lobster Two", cursive;
   margin: 10px;
-  color: #8068d8;
+  color: #c33e3f;
 }
 
 button {
@@ -29,4 +29,9 @@ button {
   font-size: 16px;
   padding: 10px;
   border-radius: 5px;
+  margin-left: 10px;
+}
+
+button:focus {
+  background-color: #c33e3f;
 }

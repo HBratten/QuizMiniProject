@@ -1,12 +1,21 @@
-* {
+:host {
+  display: block;
   font-family: "Lobster Two", cursive;
+  background-image: url(../../assets/taytay4.jpg);
+  background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+  margin: 0;
 }
 
 div {
   font-size: 20px;
-  display: flex;
+}
+h2 {
+  color: white;
 }
 
 p {
   margin: 20px;
+  color: white;
 }

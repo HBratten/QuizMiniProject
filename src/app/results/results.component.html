@@ -1,12 +1,8 @@
-<!-- <div *ngFor="let score of score; index as i">
-  <p>{{ this.score.username }}</p>
-  <p>{{ this.score.score }}</p>
-</div> -->
 <h1>Your Score</h1>
 <h1>{{ score }}</h1>
 
 <h2>Answers</h2>
 <div *ngFor="let question of quizQuestions; index as i">
   <p>{{ question.question_name }}</p>
-  <p>{{ submittedAnswers[i] }}</p>
+  <p>{{ question.answer }}</p>
 </div>
